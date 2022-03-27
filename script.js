@@ -91,11 +91,13 @@ function calc() {
 
 // ------equal button outPut-----
 function equalOut() {
+    if(preText.innerText == '' )
+        return ; 
     calc();
-    if (ans !== null ) {
+    
         currText.innerText = ans;
         preText.innerText = '';
-    }
+    
 }
 // ----------- operator output -----------
 function operatorOut(sign) {
