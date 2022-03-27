@@ -92,7 +92,7 @@ function calc() {
 // ------equal button outPut-----
 function equalOut() {
     calc();
-    if (ans !== undefined) {
+    if (ans !== null ) {
         currText.innerText = ans;
         preText.innerText = '';
     }
@@ -100,7 +100,7 @@ function equalOut() {
 // ----------- operator output -----------
 function operatorOut(sign) {
     calc();
-    if (ans !== undefined) {
+    if (ans !== null) {
         preText.innerText = ans + ' ' + sign;
         currText.innerText = '';
         operator = sign;
