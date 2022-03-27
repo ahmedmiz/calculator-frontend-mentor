@@ -101,7 +101,7 @@ function equalOut() {
 // ----------- operator output -----------
 function operatorOut(sign) {
     calc();
-    if (ans !== null) {
+    if (ans !== undefined) {
         preText.innerText = ans + ' ' + sign;
         currText.innerText = '';
         operator = sign;
